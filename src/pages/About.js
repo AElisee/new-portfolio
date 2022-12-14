@@ -1,11 +1,15 @@
 import React from "react";
+import AboutComponent from "../components/about/AboutComponent";
 import Navigation from "../components/Navigation/Navigation";
+import Sectionheader from "../components/Sectionheader";
 
 const About = () => {
+  let sectionTitle = "A propos de moi";
   return (
-    <div>
+    <div className="about-section">
       <Navigation />
-      <h3>About</h3>
+      <Sectionheader sectionTitle={sectionTitle} />
+      <AboutComponent />
     </div>
   );
 };

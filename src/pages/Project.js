@@ -1,11 +1,13 @@
 import React from "react";
 import Navigation from "../components/Navigation/Navigation";
+import Sectionheader from "../components/Sectionheader";
 
 const Project = () => {
+  let sectionTitle = "Mes Projets"
   return (
-    <div>
+    <div className="project-section">
       <Navigation />
-      <h2>mes projets</h2>
+      <Sectionheader sectionTitle={sectionTitle}/>
     </div>
   );
 };

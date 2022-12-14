@@ -1,11 +1,13 @@
 import React from "react";
 import Navigation from "../components/Navigation/Navigation";
+import Sectionheader from "../components/Sectionheader";
 
 const Contact = () => {
+  let sectionTitle = "Me contacter"
   return (
-    <div>
+    <div className="contact-section">
       <Navigation />
-      <h3>ME CONTACTER</h3>
+      <Sectionheader sectionTitle={sectionTitle}/>
     </div>
   );
 };

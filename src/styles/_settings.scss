@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: Rubik;
-  src: url(./../assets/fonts/Rubik-VariableFont_wght.ttf);
+  src: url("./../assets/fonts/Rubik-VariableFont_wght.ttf");
 }
 
 // fonts 
@@ -21,6 +21,7 @@ $Rubik : Rubik;
 // colors
 $color1 : #3b3663;
 $color2 :#f47514;
+$color3 : rgba(144, 144, 144, 0.158);
 
 * {
   padding: 0;
@@ -30,6 +31,7 @@ $color2 :#f47514;
 
 body {
   font-size: 16px;
+  font-family: $Rubik;
 }
 
 @mixin f-center {

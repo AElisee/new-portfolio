@@ -1,11 +1,13 @@
 import React from "react";
 import Navigation from "../components/Navigation/Navigation";
+import Sectionheader from "../components/Sectionheader";
 
 const Skills = () => {
+  let sectionTitle = "Mes Compétences"
   return (
-    <div>
+    <div className="skill-section">
       <Navigation />
-      <h2>Competences</h2>
+     <Sectionheader sectionTitle={sectionTitle}/>
     </div>
   );
 };

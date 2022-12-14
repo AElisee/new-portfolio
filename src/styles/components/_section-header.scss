@@ -1,0 +1,38 @@
+.section-header{
+  width: 100%;
+  height: 250px;
+  background: url("./../../assets/images/mega_footer_bg.jpg") center/cover;
+  margin-top: 40px;
+  @include f-center;
+  color: white;
+
+  h2{
+    padding: 15px 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  ul{
+    width: 100%;
+    @include f-center;
+
+    li{
+      font-size: 1rem;
+      margin: 5px;
+      font-weight: 200;
+
+      a{
+        color: white;
+        span{
+          display: inline-block;
+          padding: 3px;
+          margin-left: 5px;
+          width: 10px;
+          height: 10px;
+          background-color: $color2;
+          border-radius: 150px;
+        }
+      }
+    }
+  }
+}
