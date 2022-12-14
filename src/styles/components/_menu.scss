@@ -1,0 +1,80 @@
+.menu {
+  @include f-center;
+  justify-content: end;
+
+  .burger-nav {
+    visibility: hidden;
+
+    @media screen and (max-width: 1055px) {
+      visibility: visible;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 770px) {
+      margin: 0;
+    }
+  }
+
+  .x-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .f-menu {
+    width: 100%;
+    @include f-center;
+    justify-content: end;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 27px;
+    transition: 0.2s ease-in-out;
+
+    li {
+      padding: 0 20px;
+
+      a {
+        color: $color1;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          color: $color2;
+          opacity: 0.9;
+        }
+      }
+
+      .nav-active {
+        color: $color2;
+      }
+    }
+
+    @media screen and (max-width: 1055px) {
+      display: none;
+    }
+  }
+
+  .f-menu.show-links {
+    position: absolute;
+    padding: 20px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(62, 61, 61, 0.142);
+
+    li {
+      width: 100%;
+      padding: 10px;
+
+      a {
+        display: block;
+      }
+    }
+  }
+}
