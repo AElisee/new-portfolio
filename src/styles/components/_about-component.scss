@@ -1,8 +1,54 @@
-.about-component{
+.about-component {
   padding: 20px 0;
   min-height: 100vh;
 
-  h2{
-    text-align: center;
+  .card-container {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .card {
+      flex-grow: 1;
+      flex: 1 0 25%;
+      margin: 10px;
+      min-width: 380px;
+      width: 410px;
+      max-width: 550px;
+      padding: 30px 10px;
+      display: grid;
+      grid-template-columns: 25% 75%;
+      gap: 10px;
+
+      .l-card {
+        .l-card-container {
+          width: 85px;
+          height: 85px;
+          background-color: gray;
+          border-radius: 7px;
+        }
+        .l-card-container.green {
+          background-color: #ebfdf9;
+        }
+        .l-card-container.gray {
+          background-color: #f3f5fc;
+        }
+        .l-card-container.blue {
+          background-color: #eff6fe;
+        }
+      }
+
+      .r-card {
+        .post {
+          padding-bottom: 15px;
+        }
+
+        .date {
+          padding: 5px 0 10px;
+        }
+      }
+    }
   }
-  }
+}
