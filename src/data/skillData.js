@@ -1,15 +1,19 @@
 export const skills = [
   {
-    name: "JavaScript",
+    name: "JavaScript & Typescript",
     icon: "./icons/js.svg",
   },
   {
-    name: "ReactJs",
+    name: "ReactJs & React Native",
     icon: "./icons/react.png",
   },
   {
     name: "Redux",
     icon: "./icons/redux.svg",
+  },
+  {
+    name: "Next.js",
+    icon: "./icons/nextjs.svg",
   },
   {
     name: "Html",
@@ -22,6 +26,10 @@ export const skills = [
   {
     name: "Sass",
     icon: "./icons/sass.svg",
+  },
+  {
+    name: "Tailwind css",
+    icon: "./icons/tailwindcss.svg",
   },
   {
     name: "Bootstrap",
@@ -48,12 +56,12 @@ export const skills = [
     icon: "./icons/mongodb.svg",
   },
   {
-    name: "Api",
-    icon: "./icons/api.svg",
-  },
-  {
     name: "Git & Github",
     icon: "./icons/git.svg",
     icon_2: "./icons/github.svg",
+  },
+  {
+    name: "Photoshop",
+    icon: "./icons/photoshop.svg",
   },
 ];

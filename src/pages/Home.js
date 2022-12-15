@@ -2,6 +2,7 @@ import React from "react";
 import AboutComponent from "../components/about/AboutComponent";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation/Navigation";
+import ProjectComponent from "../components/project/ProjectComponent";
 import SkillComponent from "../components/skills/SkillComponent";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       </div>
       <AboutComponent />
       <SkillComponent />
+      <ProjectComponent />
     </div>
   );
 };

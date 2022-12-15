@@ -1,0 +1,189 @@
+.project-component {
+  padding: 20px 0;
+  min-height: 100vh;
+
+  > div {
+    width: 100%;
+
+    .project-nav {
+      @include f-center;
+
+      width: 100%;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+
+      // hide scrollBar
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      @media screen and (max-width: 550px) {
+        justify-content: start;
+      }
+
+      li {
+        padding: 7px 15px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        width: max-content;
+        border-radius: 10px;
+        margin: 10px;
+        transition: 0.3s ease-in-out;
+
+        @media screen and (max-width: 550px) {
+          margin: 5px;
+          font-size: 1rem;
+          font-weight: 550;
+          padding: 5px 10px;
+        }
+
+        a {
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: $color2;
+          a {
+            color: white;
+          }
+        }
+      }
+
+      li:nth-child(1) {
+        background-color: $color2;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .projects {
+    padding: 40px;
+    padding-bottom: 25px;
+    @include f-center;
+    width: 100%;
+    // border: 1px solid blue;
+
+    .project-container {
+      width: 750px;
+      min-width: 500px;
+
+      .project.img-on-right {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        // border: 1px solid red;
+        gap: 50;
+
+        .txt-part {
+          position: relative;
+          width: 100%;
+          @include f-center;
+          justify-content: end;
+          padding-right: 50px;
+
+          &::after {
+            @include skill-after;
+          }
+          &::before {
+            @include skill-before;
+            background-color: rgb(104, 202, 226);
+          }
+        }
+
+        .txt-part.p1 {
+          &::before {
+            background-color: #42cd83;
+          }
+        }
+        .txt-part.p3 {
+          &::before {
+            background-color: #7164ea;
+          }
+        }
+        .txt-part.p5 {
+          &::before {
+            background-color: #00ccff;
+          }
+        }
+
+        .img-part {
+          width: 100%;
+          @include f-center;
+          justify-content: start;
+          padding-left: 50px;
+
+          .img-container {
+            width: 100%;
+            height: 190px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: center;
+              overflow: cover;
+            }
+          }
+        }
+      }
+      .project.img-on-left {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        // border: 1px solid red;
+        gap: 50;
+
+        .img-part {
+          position: relative;
+          width: 100%;
+          @include f-center;
+          justify-content: end;
+          padding-right: 50px;
+
+          .img-container {
+            width: 100%;
+            height: 180px;
+            background-color: aquamarine;
+            padding: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              object-fit: top;
+            }
+          }
+
+          &::after {
+            @include skill-after;
+          }
+          &::before {
+            @include skill-before;
+            background-color: rgb(104, 202, 226);
+          }
+        }
+        .img-part.p2 {
+          &::before {
+            background-color: #f29111;
+          }
+        }
+        .img-part.p4 {
+          &::before {
+            background-color: #f90bad;
+          }
+        }
+        .txt-part {
+          width: 100%;
+          @include f-center;
+          justify-content: start;
+          padding-left: 50px;
+        }
+      }
+    }
+  }
+}

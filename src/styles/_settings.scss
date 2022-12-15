@@ -68,3 +68,25 @@ a:visited {
   line-height: 3rem;
   font-weight: 800;
 }
+
+@mixin skill-after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  width: 1px;
+  height: 130%;
+  transform: translateY(-40%);
+  background-color: gray;
+}
+@mixin skill-before {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 150px;
+}

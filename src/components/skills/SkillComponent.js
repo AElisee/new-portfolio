@@ -5,7 +5,7 @@ const SkillComponent = () => {
   return (
     <div className="skill-component">
       <h2 className="section-title">Mes compétences</h2>
-      <h3 className="section-description">Compétences Globales</h3>
+      <h3 className="section-description">Top Compétences</h3>
       <ul className="card-container">
         {skills.map((el, index) => (
           <li key={index} className="card">
