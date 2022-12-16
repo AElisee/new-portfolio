@@ -1,5 +1,6 @@
 .project-component {
   padding: 20px 0;
+  margin-bottom: 50px;
   min-height: 100vh;
 
   > div {
@@ -20,7 +21,7 @@
         display: none;
       }
 
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 650px) {
         justify-content: start;
       }
 
@@ -117,17 +118,7 @@
           padding-left: 50px;
 
           .img-container {
-            width: 100%;
-            height: 190px;
-            border-radius: 10px;
-            overflow: hidden;
-
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: center;
-              overflow: cover;
-            }
+            @include img-style;
           }
         }
       }
@@ -145,19 +136,11 @@
           justify-content: end;
           padding-right: 50px;
 
+          // start
           .img-container {
-            width: 100%;
-            height: 180px;
-            background-color: aquamarine;
-            padding: 50px;
-            border-radius: 10px;
-            overflow: hidden;
-
-            img {
-              width: 100%;
-              object-fit: top;
-            }
+            @include img-style;
           }
+          // **********
 
           &::after {
             @include skill-after;

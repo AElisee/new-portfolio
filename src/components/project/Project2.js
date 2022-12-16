@@ -5,7 +5,12 @@ const Project2 = () => {
     <div className="project img-on-left">
       <div className="img-part p2">
         <div className="img-container">
-          <p>image</p>
+          <img src="./img/cooking.jpg" alt="cooking-bg" />
+          <div className="view">
+            <a href="" target="_blank" rel="noopener noreferrer">
+              Voir plus <span>></span>
+            </a>
+          </div>
         </div>
       </div>
       <div className="txt-part">

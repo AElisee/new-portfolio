@@ -8,7 +8,12 @@ const Project5 = () => {
       </div>
       <div className="img-part">
         <div className="img-container">
-          <p>image</p>
+          <img src="./img/gaming_campus.jpg" alt="gaming-bg" />
+          <div className="view">
+            <a href="" target="_blank" rel="noopener noreferrer">
+              Voir plus <span>></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

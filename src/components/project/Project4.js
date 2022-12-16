@@ -5,7 +5,16 @@ const Project4 = () => {
     <div className="project img-on-left">
       <div className="img-part p4">
         <div className="img-container">
-          <p>image</p>
+          <img src="./img/resto.jpg" alt="resto-bg" />
+          <div className="view">
+            <a
+              href="https://aelisee-leresto.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir plus <span>></span>
+            </a>
+          </div>
         </div>
       </div>
       <div className="txt-part">

@@ -9,6 +9,11 @@ const Project1 = () => {
       <div className="img-part">
         <div className="img-container">
           <img src="./img/movies.jpg" alt="movies-bg" />
+          <div className="view">
+            <a href="" target="_blank" rel="noopener noreferrer">
+              Voir plus <span>></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
