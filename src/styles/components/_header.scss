@@ -1,29 +1,43 @@
 .header {
+  position: relative;
+  @include f-center;
   width: 100%;
-  padding: 0 40px;
-  padding: 20px;
-  min-height: 100vh;
+  height: 100vh;
 
+  .bg-text {
+    z-index: -10;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    @include f-center;
+    animation: bg-text 5s infinite ease-in-out alternate;
+
+    h2 {
+      opacity: 0.8;
+      font-size: 280px;
+      font-weight: 900;
+      color: white;
+      transform: scale(0.9);
+    }
+  }
+
+  @keyframes bg-text {
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(0.99);
+    }
+  }
   .container {
     width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: calc(100vh - 150px);
-
-    @media screen and (max-width: 1000px) {
-      grid-template-columns: 100%;
-    }
+    position: relative;
+    @include f-center;
+    height: 100vh;
 
     .l-container {
       display: flex;
-      align-items: end;
-      width: 100%;
-      padding-bottom: 0;
-
-      @media screen and (max-width: 1000px) {
-        @include f-center;
-      }
-
       .welcome {
         padding: 20px 0;
         font-family: $Nunito;
@@ -32,17 +46,22 @@
 
         span {
           display: block;
-          font-size: 1.7rem;
-          margin: 15px 0;
-          letter-spacing: 1px;
+          font-weight: 800;
+          font-family: Montserrat;
+          font-size: 48px;
+          line-height: 56px;
+          margin: 5px 0;
           padding-left: 10px;
+          font-weight: 800;
+          letter-spacing: -2px;
         }
 
         h1 {
+          font-family: Montserrat;
           font-size: 4rem;
           line-height: 63px;
           font-weight: 800;
-          letter-spacing: 0.2px;
+          letter-spacing: -2px;
         }
       }
 

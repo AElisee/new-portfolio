@@ -1,7 +1,5 @@
 .contact-component {
-  padding: 20px 0;
   min-height: 100vh;
-  margin-top: 45px;
 
   .container {
     width: 90%;
@@ -12,6 +10,11 @@
     font-size: 1.2rem;
     line-height: 27px;
 
+    h4 {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
     .contact {
       width: 80%;
 
@@ -21,16 +24,25 @@
         #num {
           font-size: 1.1rem;
           font-weight: 20px;
+          color: #6557e7;
+          font-weight: 700;
+          padding: 3px 0;
         }
 
         #phone {
           font-size: 1rem;
           color: $color2;
-          font-weight: 500;
         }
       }
 
       .email {
+        padding: 3px 0;
+        span {
+          font-family: Nunito;
+          color: #6557e7;
+          font-weight: 700;
+          font-size: 1.4rem;
+        }
       }
 
       .address {
@@ -42,11 +54,28 @@
       padding: 10px;
       width: 100%;
       background-color: aliceblue;
+      display: grid;
+      grid-template-rows: 30% 1fr 10%;
+      border-radius: 5px;
+
+      .form-container-head {
+        padding-bottom: 30px;
+
+        h3 {
+          font-weight: 900;
+          letter-spacing: -1px;
+          font-size: 2.2rem;
+          line-height: 40px;
+          background: -webkit-linear-gradient(#622eb7, #685ae7);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
       form {
         width: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 60px 1fr 1fr;
+        grid-template-rows: 80px 1fr 100px;
         grid-template-areas:
           "name email"
           "message message"
@@ -54,7 +83,7 @@
 
         .name-container {
           width: 95%;
-          height: max-content;
+          // height: max-content;
           grid-area: name;
         }
 
@@ -76,15 +105,17 @@
             resize: none;
             border: none;
             outline: none;
-            border-bottom: 1px solid black;
+            border-bottom: 2px solid $color3;
             font-family: $Rubik;
             font-size: 1rem;
             background-color: inherit;
+            caret-color: $color2;
           }
         }
 
         .submit-container {
           padding: 20px 0;
+
           input {
             height: 50px;
             cursor: pointer;
@@ -94,12 +125,33 @@
             letter-spacing: 0.2px;
             font-size: 0.9rem;
             font-weight: 500;
-            width: auto;
+            width: 150px;
             display: inline-block;
             padding: 10px 30px;
             background-color: $color1;
             font-family: $Rubik;
             line-height: 23px;
+            background-image: linear-gradient(
+              to right,
+              #8a80ef,
+              #8176ed,
+              #786ceb,
+              #6f61e9,
+              #6557e7
+            );
+            border: none;
+            transition: 0.7s ease-in-out;
+
+            &:hover {
+              background-image: linear-gradient(
+                to left,
+                #8a80ef,
+                #8176ed,
+                #786ceb,
+                #6f61e9,
+                #6557e7
+              );
+            }
           }
         }
 
@@ -110,10 +162,46 @@
           background: none;
           border: none;
           outline: none;
-          border-bottom: 1px solid black;
+          border-bottom: 2px solid $color3;
           font-family: $Rubik;
           font-size: 1rem;
+          caret-color: $color2;
         }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+          transition: 0.3s ease-in-out;
+          border-bottom: 2px solid #6f61e9;
+        }
+      }
+      .formMessage {
+        width: 100%;
+        height: 50px;
+        // background-color: $color1;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: white;
+
+        .success {
+          color: green;
+        }
+        .error {
+          color: red;
+        }
+      }
+    }
+
+    .contact-map {
+      padding: 20px 0;
+      width: 1200px;
+      background-color: red;
+
+      iframe {
+        width: 100%;
       }
     }
   }

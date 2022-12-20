@@ -19,9 +19,11 @@ $Nunito: Nunito;
 $Rubik: Rubik;
 
 // colors
+$color0: rgb(238, 243, 247);
 $color1: #3b3663;
 $color2: #f47514;
 $color3: rgba(144, 144, 144, 0.158);
+$color4: #f3f5fc;
 
 * {
   padding: 0;
@@ -30,8 +32,16 @@ $color3: rgba(144, 144, 144, 0.158);
 }
 
 body {
+  z-index: 0;
   font-size: 16px;
   font-family: $Rubik;
+  background-color: $color0;
+  scroll-behavior: smooth;
+
+  .about-component,
+  .project-component {
+    background-color: #fff !important;
+  }
 }
 
 @mixin f-center {
@@ -60,6 +70,7 @@ a:visited {
   font-size: 1.1rem;
   padding-top: 30px;
   text-transform: uppercase;
+  color: $color2;
 }
 .section-description {
   text-align: center;
@@ -67,6 +78,39 @@ a:visited {
   font-size: 2rem;
   line-height: 3rem;
   font-weight: 800;
+}
+
+.media {
+  @include f-center;
+  justify-content: end;
+
+  @media screen and (max-width: 770px) {
+    display: none;
+  }
+
+  .container {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: $color1;
+    transition: 0.3s ease-in-out;
+
+    a {
+      font-size: 0.8rem;
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      background-color: white;
+      border: 1px solid $color1;
+
+      a {
+        color: $color1;
+      }
+    }
+  }
 }
 
 @mixin shadow {

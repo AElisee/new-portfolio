@@ -24,13 +24,15 @@
   }
 
   .f-menu {
-    width: 100%;
+    width: max-content;
     @include f-center;
     justify-content: end;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 27px;
     transition: 0.2s ease-in-out;
+    border-radius: 5px;
+    padding: 5px 10px;
 
     li {
       padding: 0 20px;

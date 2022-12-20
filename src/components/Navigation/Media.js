@@ -1,12 +1,18 @@
 import React from "react";
 
-const Media = () => {
+const Media = ({ inFooter }) => {
   return (
     <div className="media">
       <div className="container">
-        <img src="" alt="" />
-        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-          Linkedin
+        <a
+          href="https://www.linkedin.com/in/angekouassi/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {inFooter ? (
+            <img src={"./svg/brand-linkedin.svg"} alt="brand.linkedin" />
+          ) : null}
+          <span> Linkedin</span>
         </a>
       </div>
     </div>

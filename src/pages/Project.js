@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation/Navigation";
 import ProjectComponent from "../components/project/ProjectComponent";
 import Sectionheader from "../components/Sectionheader";
@@ -10,6 +11,7 @@ const Project = () => {
       <Navigation />
       <Sectionheader sectionTitle={sectionTitle} />
       <ProjectComponent />
+      <Footer />
     </div>
   );
 };

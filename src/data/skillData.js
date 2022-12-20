@@ -64,4 +64,8 @@ export const skills = [
     name: "Photoshop",
     icon: "./icons/photoshop.svg",
   },
+  {
+    name: "...",
+    icon: "./icons/plus.svg",
+  },
 ];

@@ -26,7 +26,9 @@ const AboutComponent = () => {
 
         <li className="card">
           <div className="l-card">
-            <div className="l-card-container gray"></div>
+            <div className="l-card-container gray">
+              <img src={"./svg/certificate-2.svg"} alt="" />
+            </div>
           </div>
           <div className="r-card">
             <h3 className="post">BootCamps FullStack Js</h3>

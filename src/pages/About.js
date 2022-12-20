@@ -1,5 +1,6 @@
 import React from "react";
 import AboutComponent from "../components/about/AboutComponent";
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation/Navigation";
 import Sectionheader from "../components/Sectionheader";
 
@@ -10,6 +11,7 @@ const About = () => {
       <Navigation />
       <Sectionheader sectionTitle={sectionTitle} />
       <AboutComponent />
+      <Footer />
     </div>
   );
 };

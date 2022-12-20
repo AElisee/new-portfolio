@@ -1,6 +1,5 @@
 .project-component {
-  padding: 20px 0;
-  margin-bottom: 50px;
+  padding: 20px 0 50px;
   min-height: 100vh;
 
   > div {
@@ -8,7 +7,6 @@
 
     .project-nav {
       @include f-center;
-
       width: 100%;
       flex-wrap: nowrap;
       overflow-x: scroll;
@@ -26,12 +24,12 @@
       }
 
       li {
-        padding: 7px 15px;
+        padding: 7px 0;
         font-size: 1.1rem;
         font-weight: 600;
         width: max-content;
-        border-radius: 10px;
         margin: 10px;
+        margin-right: 25px;
         transition: 0.3s ease-in-out;
 
         @media screen and (max-width: 550px) {
@@ -46,11 +44,17 @@
         }
 
         &:hover {
-          background-color: $color2;
+          border-bottom: 1px solid $color2;
           a {
-            color: white;
+            color: $color2;
           }
         }
+      }
+
+      li:nth-child(1) {
+        padding: 7px 15px;
+        border: none;
+        border-radius: 5px;
       }
 
       li:nth-child(1) {
@@ -73,6 +77,8 @@
       min-width: 500px;
 
       .project.img-on-right {
+        z-index: 10;
+        position: relative;
         display: grid;
         grid-template-columns: 50% 50%;
         width: 100%;
@@ -123,6 +129,8 @@
         }
       }
       .project.img-on-left {
+        z-index: 10;
+        position: relative;
         display: grid;
         grid-template-columns: 50% 50%;
         width: 100%;

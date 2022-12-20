@@ -28,6 +28,7 @@
           height: 85px;
           background-color: gray;
           border-radius: 7px;
+          @include f-center;
         }
         .l-card-container.green {
           background-color: #ebfdf9;
